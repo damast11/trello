@@ -1,0 +1,10 @@
+DELETE FROM tasks;
+DELETE FROM columns;
+DELETE FROM boards;
+INSERT INTO boards (id,name) VALUES (1,'Test1');
+INSERT INTO boards (id,name) VALUES (2,'Test2');
+INSERT INTO columns (id,title,board_id) VALUES (1,'Brazil',1);
+INSERT INTO columns (id,title,board_id) VALUES (2,'USA',1);
+INSERT INTO columns (id,title,board_id) VALUES (3,'Italy',2);
+INSERT INTO tasks (id,description,title,column_id) VALUES (1,'Brazil description','Brazil',1);
+INSERT INTO tasks (id,description,title,column_id) VALUES (2,'Italy description','Italy',2);
